@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: red;
+}
+
+footer {
+  background: blue;
+  width: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

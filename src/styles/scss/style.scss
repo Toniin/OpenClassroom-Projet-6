@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@import "./_variables.scss";
+// --- //
+@import "./header.scss";
+@import "./_footer.scss";

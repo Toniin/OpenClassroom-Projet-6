@@ -1,14 +1,13 @@
-import { useRouteError } from "react-router-dom";
+import { Link } from "react-router-dom";
+import error404 from "../assets/404.png"
+import Header from "../components/Header"
 
-export default function ErrorPage() {
-  const error = useRouteError();
+const ErrorPage = () =>
+    <>
+      <Header />
+      <img src={error404} alt="Erreur 404" />
+      <h1>Oups! La page que vous demandez n'existe pas.</h1>
+      <Link to={`/`}>Retourner sur la page d’accueil</Link>
+    </>
 
-  return (
-    <div>
-      <h1>Oops!</h1>
-      <h2>STATUS {error.status}</h2>
-      <p>STATUS TEXTE{error.statusText}</p>
-      <p>{error.data}</p>
-    </div>
-  );
-}
+export default ErrorPage
