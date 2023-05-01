@@ -1,0 +1,17 @@
+.errorPageContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $primary-color;
+
+  a {
+    color: $primary-color;
+    margin-top: 10rem;
+  }
+}
+
+.errorNotFound {
+  font-weight: 700;
+  font-size: 20rem;
+  margin: 0;
+}

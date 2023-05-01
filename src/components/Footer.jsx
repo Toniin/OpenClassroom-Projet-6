@@ -1,4 +1,4 @@
-import kasaLogo from "../assets/kasa-logo.svg";
+import kasaLogo from "../assets/kasa-logo-white.svg";
 
 const Footer = () => (
   <footer>

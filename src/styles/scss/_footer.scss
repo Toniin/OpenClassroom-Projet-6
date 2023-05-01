@@ -1,4 +1,18 @@
 footer {
-  background: $primary-color;
-  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 5px;
+
+  background: $black-color;
+  color: $white-color;
+
+  img {
+    width: 80px;
+    padding-bottom: 5px;
+  }
 }

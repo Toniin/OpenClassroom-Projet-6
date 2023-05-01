@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () =>
     <header>
       <img src={kasaLogo} alt="Logo kasa" />
-      <nav>
+      <nav className="navbar-header">
         <ul>
           <li>
             <Link to={`/`}>Accueil</Link>
