@@ -1,3 +1,3 @@
-const Annonces = () => <div>Annonces</div>;
+const Annonces = () => <main>Annonces</main>;
 
 export default Annonces;

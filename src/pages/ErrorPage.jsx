@@ -1,6 +1,5 @@
 import { useRouteError, Link } from "react-router-dom";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 export default function ErrorPage() {
   const error = useRouteError();
@@ -14,7 +13,6 @@ export default function ErrorPage() {
         <h1>Oups! La page que vous demandez n'existe pas.</h1>
         <Link to={`/`}>Retourner sur la page d’accueil</Link>
       </main>
-      <Footer />
     </>
   );
 }
