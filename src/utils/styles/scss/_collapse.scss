@@ -1,0 +1,38 @@
+.collapse {
+  width: 100%;
+  margin: 30px 0;
+
+  button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+
+    background-color: $primary-color;
+    color: $white-color;
+
+    span {
+      float: right;
+    }
+  }
+}
+
+.contentCollapse {
+  border-radius: 10px;
+  padding: 20px;
+
+  font-weight: 400;
+  font-size: 1.3rem;
+
+  background-color: $grey-color;
+  color: $primary-color;
+  
+  p {
+    margin: 0;
+  }
+}

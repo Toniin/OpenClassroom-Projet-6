@@ -1,8 +1,8 @@
-export default function Banner({ imgUrl, imgAlt, isTextShow, text }) {
+export default function Banner({ imgUrl, imgAlt, isTextShow, titleBanner }) {
   return (
     <section className="banner">
       <img src={imgUrl} alt={imgAlt} />
-      { isTextShow ? <h1>{text}</h1> : "" }
+      { isTextShow ? <h1>{titleBanner}</h1> : "" }
     </section>
   );
 }

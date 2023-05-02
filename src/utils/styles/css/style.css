@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 body {
+  position: relative;
   width: 100%;
-  max-width: 1440px;
-  margin: auto;
+  margin: 0;
   padding: 0;
 }
 
 #root {
   width: 100%;
+  max-width: 1440px;
+  margin: auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,7 +17,7 @@ body {
 }
 
 main {
-  margin: 0 5rem;
+  margin: 0 5rem 200px;
 }
 
 header {
@@ -48,10 +50,12 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0 5px;
+  justify-content: center;
+  padding-top: 40px;
   background: #000000;
   color: #ffffff;
 }
@@ -88,7 +92,8 @@ footer img {
 .banner img {
   width: 100%;
   height: 230px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   filter: brightness(70%);
   border-radius: 20px;
 }
@@ -99,4 +104,65 @@ footer img {
   font-size: 3rem;
 }
 
-/*# sourceMappingURL=style.css.map */
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f7f7f7;
+  padding: 55px 0;
+  gap: 55px;
+  border-radius: 20px;
+}
+
+.cardContent {
+  position: relative;
+  width: 340px;
+  height: 340px;
+}
+.cardContent img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.cardContent h2 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.collapse {
+  width: 100%;
+  margin: 30px 0;
+}
+.collapse button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  background-color: #ff6060;
+  color: #ffffff;
+}
+.collapse button span {
+  float: right;
+}
+
+.contentCollapse {
+  border-radius: 10px;
+  padding: 20px;
+  font-weight: 400;
+  font-size: 1.3rem;
+  background-color: #f7f7f7;
+  color: #ff6060;
+}
+.contentCollapse p {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */

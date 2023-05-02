@@ -2,14 +2,17 @@
 @import "./_variables.scss";
 
 body {
+  position: relative;
   width: 100%;
-  max-width: 1440px;
-  margin: auto;
+  margin: 0;
   padding: 0;
 }
 
 #root {
   width: 100%;
+  max-width: 1440px;
+  margin: auto;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,7 +20,7 @@ body {
 }
 
 main {
-  margin: 0 5rem;
+  margin: 0 5rem 200px;
 }
 
 // --- //
@@ -25,3 +28,5 @@ main {
 @import "./_footer.scss";
 @import "./_errorPage.scss";
 @import "./_banner.scss";
+@import "./_card.scss";
+@import "./_collapse.scss";
