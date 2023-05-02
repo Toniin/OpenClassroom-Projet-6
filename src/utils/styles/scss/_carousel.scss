@@ -1,0 +1,57 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 430px;
+
+  p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: $white-color;
+  }
+
+  button {
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    background: none;
+
+    svg {
+      font-size: 5rem;
+      color: $white-color;
+    }
+  }
+}
+
+.carouselImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.btnCarouselPrevious {
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+
+  opacity: 80%;
+
+  &:hover {
+    opacity: 100%;
+  }
+}
+
+.btnCarouselNext {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+
+  opacity: 80%;
+
+  &:hover {
+    opacity: 100%;
+  }
+}

@@ -1,0 +1,11 @@
+.rating {
+  display: flex;
+
+  svg {
+    color: $grey-color;
+  }
+
+  svg.starActive {
+    color: $primary-color;
+  }
+}
