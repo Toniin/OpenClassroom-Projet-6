@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import Carousel from "../components/Carousel";
+import Slideshow from "../components/Slideshow";
 import Collapse from "../components/Collapse";
 import dataList from "../dataList.json";
 import Tag from "../components/Tag";
@@ -14,7 +14,7 @@ export default function Annonces() {
 
   return (
     <main className="annoncePageContent">
-      <Carousel pictures={annonce.pictures} />
+      <Slideshow pictures={annonce.pictures} />
       <div className="annonceHeader">
         <div className="annonceTitle-Location">
           <h1>{annonce.title}</h1>
