@@ -11,21 +11,26 @@ export default function Slideshow({ pictures }) {
   function previousPicture() {
     const indexImage = pictures.indexOf(picture);
 
-    if (indexImage - 1 >= 0) {
-      setPicture(pictures[indexImage - 1]);
-    } else {
-      setPicture(pictures[pictures.length - 1]);
-    }
+    // if (indexImage - 1 >= 0) {
+    //   setPicture(pictures[indexImage - 1]);
+    // } else {
+    //   setPicture(pictures[pictures.length - 1]);
+    // }
+
+    //REGARDER POUR LES MODULOS
+    setPicture(pictures[(indexImage-1+pictures.length)%pictures.length])
   }
 
   function nextPicture() {
     const indexImage = pictures.indexOf(picture);
 
-    if (indexImage + 1 < pictures.length) {
-      setPicture(pictures[indexImage + 1]);
-    } else {
-      setPicture(pictures[0]);
-    }
+    // if (indexImage + 1 < pictures.length) {
+    //   setPicture(pictures[indexImage + 1]);
+    // } else {
+    //   setPicture(pictures[0]);
+    // }
+
+    setPicture(pictures[(indexImage+1)%pictures.length])
   }
 
   return (
