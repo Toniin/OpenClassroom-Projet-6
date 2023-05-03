@@ -27,7 +27,7 @@ export default function Annonces() {
         </ul>
         <div className="annonceAuthor-Rating">
           <div className="annonceAuthor">
-            <p>{firstName} <div>{lastName}</div></p>
+            <p>{firstName} <span>{lastName}</span></p>
             <img src={annonce.host.picture} alt={annonce.host.name} />
           </div>
           <Rating rating={annonce.rating} indexAnnonce={annonce.id} />
