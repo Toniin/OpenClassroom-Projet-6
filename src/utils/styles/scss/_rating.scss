@@ -1,8 +1,10 @@
 .rating {
   display: flex;
+  font-size: 1.3rem;
+  gap: 6px;
 
   svg {
-    color: $grey-color;
+    color: #E3E3E3;
   }
 
   svg.starActive {

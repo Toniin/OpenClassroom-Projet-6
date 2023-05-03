@@ -1,0 +1,59 @@
+.annoncePageContent {
+  display: flex;
+  flex-direction: column;
+  color: $primary-color;
+
+  .annonceHeader {
+    position: relative;
+  }
+
+  .annonceAuthor-Rating {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    align-items: flex-end;
+  }
+}
+
+.annonceTitle-Location {
+  width: 75%;
+  margin: 20px 0;
+  font-weight: 500;
+  font-size: 1.1rem;
+
+  h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+}
+
+.annonceAuthor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-weight: 500;
+    font-size: 1.1rem;
+    gap: 2px;
+  }
+
+  img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}

@@ -1,5 +1,3 @@
-export default function Tag() {
-  return (
-    <div>Tag</div>
-  )
+export default function Tag({ tagName }) {
+  return <li key={tagName}>{tagName}</li>;
 }

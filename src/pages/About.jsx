@@ -27,7 +27,7 @@ export default function About() {
   ];
 
   return (
-    <main className="about">
+    <main className="aboutPageContent">
       <Banner imgUrl={img} imgAlt="Montagnes" isTextShow={false} />
       {contentCollapse.map((collapse, index) => (
         <Collapse

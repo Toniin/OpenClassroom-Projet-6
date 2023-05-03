@@ -155,7 +155,7 @@ footer img {
   text-align: left;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   background-color: #ff6060;
   color: #ffffff;
 }
@@ -167,7 +167,7 @@ footer img {
   border-radius: 10px;
   padding: 20px;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   background-color: #f7f7f7;
   color: #ff6060;
 }
@@ -179,9 +179,19 @@ footer img {
   margin: 0;
 }
 
-.about section.collapse {
+.aboutPageContent section.collapse {
   width: 80%;
   margin: 30px auto;
+}
+
+.annoncePageContent div:has(> .collapse) {
+  display: flex;
+  width: 100%;
+  margin: 0px auto;
+  gap: 40px;
+}
+.annoncePageContent div:has(> .collapse) .collapse {
+  margin: 0;
 }
 
 .carousel {
@@ -238,10 +248,84 @@ footer img {
 
 .rating {
   display: flex;
+  font-size: 1.3rem;
+  gap: 6px;
 }
 .rating svg {
-  color: #f7f7f7;
+  color: #E3E3E3;
 }
 .rating svg.starActive {
   color: #ff6060;
+}
+
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 0;
+  margin: 25px 0;
+}
+.tagContainer li {
+  list-style: none;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: #ff6060;
+  color: #ffffff;
+}
+
+.annoncePageContent {
+  display: flex;
+  flex-direction: column;
+  color: #ff6060;
+}
+.annoncePageContent .annonceHeader {
+  position: relative;
+}
+.annoncePageContent .annonceAuthor-Rating {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  align-items: flex-end;
+}
+
+.annonceTitle-Location {
+  width: 75%;
+  margin: 20px 0;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.annonceTitle-Location h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin: 0;
+}
+.annonceTitle-Location p {
+  margin: 5px 0;
+}
+
+.annonceAuthor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.annonceAuthor p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-weight: 500;
+  font-size: 1.1rem;
+  gap: 2px;
+}
+.annonceAuthor img {
+  width: 64px;
+  height: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

@@ -12,7 +12,7 @@
     text-align: left;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 
     background-color: $primary-color;
     color: $white-color;
@@ -28,7 +28,7 @@
   padding: 20px;
 
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 
   background-color: $grey-color;
   color: $primary-color;
@@ -43,9 +43,22 @@
   }
 }
 
-.about {
+.aboutPageContent {
   section.collapse {
     width: 80%;
     margin: 30px auto;
+  }
+}
+
+.annoncePageContent{
+  div:has(> .collapse) {
+    display: flex;
+    width: 100%;
+    margin: 0px auto;
+    gap: 40px;
+
+    .collapse {
+      margin: 0;
+    }
   }
 }

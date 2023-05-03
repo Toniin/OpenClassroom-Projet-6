@@ -5,7 +5,7 @@ import "./utils/styles/css/style.css"
 import Layout from "./layout/Layout"
 import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
-import Annonces from "./pages/Annonces";
+import Annonce from "./pages/Annonce";
 import About from "./pages/About";
 
 const router = createBrowserRouter([
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       },
       {
         path: "annonces/:indexAnnonce",
-        element: <Annonces />,
+        element: <Annonce />,
       },
       {
         path: "about",

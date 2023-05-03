@@ -18,7 +18,7 @@ export default function Collapse({ titleCollapse, contentCollapse }) {
           {typeof contentCollapse === "object" ? (
             <ul>
               {contentCollapse.map((content) => (
-                <li>{content}</li>
+                <li key={` Équipement - ${content}`}>{content}</li>
               ))}
             </ul>
           ) : (
