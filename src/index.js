@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./utils/styles/css/style.css"
-import Layout from "./layout/Layout"
+import "./utils/styles/css/style.css";
+import Layout from "./layout/Layout";
 import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
 import Annonce from "./pages/Annonce";
@@ -19,12 +19,12 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "annonces/:indexAnnonce",
+        path: "annonces/:idUrlAnnonce",
         element: <Annonce />,
       },
       {
         path: "about",
-        element: <About />
+        element: <About />,
       },
     ],
   },

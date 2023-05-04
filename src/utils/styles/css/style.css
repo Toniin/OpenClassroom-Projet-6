@@ -34,6 +34,7 @@ header img {
 .navbar-header ul {
   display: flex;
   flex-direction: row;
+  padding: 0;
 }
 .navbar-header ul li {
   list-style: none;

@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <Banner
         imgUrl={imgBanner}
-        imgAltBanner="Falaise avec la mer"
+        imgAlt="Falaise avec la mer"
         isTextShow={true}
         titleBanner={titleBanner}
       />

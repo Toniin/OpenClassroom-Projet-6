@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-export default function Rating({ rating, indexAnnonce }) {
+export default function Rating({ rating, idAnnonce }) {
   const stars = [];
   const starsInactive = [];
   for (let index = 0; index < rating; index++) {
@@ -19,7 +19,7 @@ export default function Rating({ rating, indexAnnonce }) {
     <div className="rating">
       {stars.map((star, index) => (
         <FontAwesomeIcon
-          key={`${indexAnnonce} - Star ${index + 1}`}
+          key={`${idAnnonce} - Star ${index + 1}`}
           icon={faStar}
           className="starActive"
         />
@@ -27,7 +27,7 @@ export default function Rating({ rating, indexAnnonce }) {
       {stars.length !== 5
         ? starsInactive.map((starInactive, index) => (
             <FontAwesomeIcon
-              key={`${indexAnnonce} - Star inactive ${index + 1}`}
+              key={`${idAnnonce} - Star inactive ${index + 1}`}
               icon={faStar}
             />
           ))
