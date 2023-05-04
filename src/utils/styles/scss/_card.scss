@@ -6,12 +6,6 @@
   padding: 55px 0;
   gap: 55px;
   border-radius: 20px;
-
-  &::after {
-    content: "";
-    width: 340px;
-    height: 340px;
-  }
 }
 
 .cardContent {
@@ -35,5 +29,24 @@
     font-size: 1.2rem;
     font-weight: 500;
     color: $white-color;
+  }
+}
+
+
+
+@media (max-width: 900px) {
+  .cardContainer {
+    padding: 1rem 0;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 745px) {
+  .cardContainer {
+    background: none;
+  }
+
+  .cardContent {
+    height: 250px;
   }
 }

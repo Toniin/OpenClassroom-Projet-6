@@ -50,7 +50,7 @@
   }
 }
 
-.annoncePageContent{
+.annoncePageContent {
   div:has(> .collapse) {
     display: flex;
     width: 100%;
@@ -59,6 +59,33 @@
 
     .collapse {
       margin: 0;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  section.collapse {
+    button {
+      font-size: 1rem;
+    }
+  }
+
+  .contentCollapse {
+    font-size: 0.9rem;
+  }
+
+  .aboutPageContent {
+    section.collapse {
+      width: 100%;
+      margin: 2rem auto;
+    }
+  }
+
+  .annoncePageContent {
+    div:has(> .collapse) {
+      margin: 1rem 0;
+      flex-wrap: wrap;
+      gap: 2rem;
     }
   }
 }

@@ -15,3 +15,13 @@
     color: $white-color;
   }
 }
+
+@media (max-width: 745px) {
+  .tagContainer {
+    margin: 0;
+
+    li {
+      font-size: 0.8rem;
+    }
+  }
+}

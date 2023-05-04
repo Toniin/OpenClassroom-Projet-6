@@ -18,3 +18,11 @@ footer {
     padding-bottom: 5px;
   }
 }
+
+@media (max-width: 745px) {
+  footer {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}

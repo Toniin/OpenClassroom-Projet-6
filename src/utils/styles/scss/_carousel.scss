@@ -55,3 +55,19 @@
     opacity: 100%;
   }
 }
+
+@media (max-width: 745px) {
+  .carousel {
+    height: 250px;
+
+    p {
+      display: none;
+    }
+
+    button {
+      svg {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

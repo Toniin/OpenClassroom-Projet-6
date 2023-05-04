@@ -24,6 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin: 1.5rem 5rem;
 }
 header img {
@@ -45,6 +46,21 @@ header img {
   color: #ff6060;
 }
 
+.navbar-header a.activeLink {
+  border-bottom: 2px solid #ff6060;
+}
+
+@media (max-width: 900px) {
+  header {
+    margin: 1rem 1rem;
+  }
+  header img {
+    width: 100px;
+  }
+  .navbar-header ul li a {
+    font-size: 1rem;
+  }
+}
 footer {
   position: absolute;
   bottom: 0;
@@ -64,6 +80,11 @@ footer img {
   padding-bottom: 5px;
 }
 
+@media (max-width: 745px) {
+  footer p {
+    font-size: 0.8rem;
+  }
+}
 .errorPageContent {
   display: flex;
   flex-direction: column;
@@ -81,6 +102,19 @@ footer img {
   margin: 10rem 0 0 0;
 }
 
+@media (max-width: 745px) {
+  .errorPageContent {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .errorPageContent a {
+    margin-top: 7rem;
+  }
+  .errorNotFound {
+    font-size: 9rem;
+    margin-top: 7rem;
+  }
+}
 .banner {
   position: relative;
   display: flex;
@@ -104,6 +138,19 @@ footer img {
   font-size: 3rem;
 }
 
+@media (max-width: 900px) {
+  .banner {
+    margin: 1rem 0;
+  }
+  .banner img {
+    height: 150px;
+    border-radius: 10px;
+  }
+  .banner h1 {
+    margin: 0 100px 0 20px;
+    font-size: 1.5rem;
+  }
+}
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
@@ -112,11 +159,6 @@ footer img {
   padding: 55px 0;
   gap: 55px;
   border-radius: 20px;
-}
-.cardContainer::after {
-  content: "";
-  width: 340px;
-  height: 340px;
 }
 
 .cardContent {
@@ -142,6 +184,20 @@ footer img {
   color: #ffffff;
 }
 
+@media (max-width: 900px) {
+  .cardContainer {
+    padding: 1rem 0;
+    gap: 2rem;
+  }
+}
+@media (max-width: 745px) {
+  .cardContainer {
+    background: none;
+  }
+  .cardContent {
+    height: 250px;
+  }
+}
 .collapse {
   width: 100%;
   margin: 30px 0;
@@ -194,6 +250,23 @@ footer img {
   margin: 0;
 }
 
+@media (max-width: 900px) {
+  section.collapse button {
+    font-size: 1rem;
+  }
+  .contentCollapse {
+    font-size: 0.9rem;
+  }
+  .aboutPageContent section.collapse {
+    width: 100%;
+    margin: 2rem auto;
+  }
+  .annoncePageContent div:has(> .collapse) {
+    margin: 1rem 0;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
 .carousel {
   position: relative;
   width: 100%;
@@ -246,18 +319,34 @@ footer img {
   opacity: 100%;
 }
 
+@media (max-width: 745px) {
+  .carousel {
+    height: 250px;
+  }
+  .carousel p {
+    display: none;
+  }
+  .carousel button svg {
+    font-size: 1.5rem;
+  }
+}
 .rating {
   display: flex;
   font-size: 1.3rem;
   gap: 6px;
 }
 .rating svg {
-  color: #E3E3E3;
+  color: #e3e3e3;
 }
 .rating svg.starActive {
   color: #ff6060;
 }
 
+@media (max-width: 745px) {
+  .rating {
+    font-size: 1rem;
+  }
+}
 .tagContainer {
   display: flex;
   flex-wrap: wrap;
@@ -275,6 +364,14 @@ footer img {
   color: #ffffff;
 }
 
+@media (max-width: 745px) {
+  .tagContainer {
+    margin: 0;
+  }
+  .tagContainer li {
+    font-size: 0.8rem;
+  }
+}
 .annoncePageContent {
   display: flex;
   flex-direction: column;
@@ -328,4 +425,47 @@ footer img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+}
+
+@media (max-width: 745px) {
+  .annoncePageContent {
+    margin-top: 1rem;
+  }
+  .annoncePageContent .annonceHeader {
+    display: flex;
+    flex-direction: column;
+  }
+  .annoncePageContent .annonceAuthor-Rating {
+    position: inherit;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0 0;
+  }
+  .annonceAuthor {
+    order: 1;
+    margin: 0;
+  }
+  .annonceAuthor p {
+    font-size: 0.9rem;
+  }
+  .annonceAuthor img {
+    width: 48px;
+    height: 48px;
+  }
+  .annonceTitle-Location {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .annonceTitle-Location h1 {
+    font-size: 1.5rem;
+  }
+  .annonceTitle-Location p {
+    margin: 5px 0;
+  }
+}
+@media (max-width: 900px) {
+  main {
+    margin: 0 1rem 200px;
+  }
 }/*# sourceMappingURL=style.css.map */

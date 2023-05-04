@@ -57,3 +57,49 @@
     border-radius: 50%;
   }
 }
+
+@media (max-width: 745px) {
+  .annoncePageContent {
+    margin-top: 1rem;
+
+    .annonceHeader {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .annonceAuthor-Rating {
+      position: inherit;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0.5rem 0 0;
+    }
+  }
+
+  .annonceAuthor {
+    order: 1;
+    margin: 0;
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .annonceTitle-Location {
+    width: 100%;
+    margin: 10px 0;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+  }
+}

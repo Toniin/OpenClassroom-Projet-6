@@ -4,10 +4,16 @@
   gap: 6px;
 
   svg {
-    color: #E3E3E3;
+    color: #e3e3e3;
   }
 
   svg.starActive {
     color: $primary-color;
+  }
+}
+
+@media (max-width: 745px) {
+  .rating {
+    font-size: 1rem;
   }
 }

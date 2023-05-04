@@ -34,3 +34,9 @@ main {
 @import "./_rating.scss";
 @import "./_tag.scss";
 @import "./_annoncePage.scss";
+
+@media (max-width: 900px) {
+  main {
+    margin: 0 1rem 200px;
+  }
+}
