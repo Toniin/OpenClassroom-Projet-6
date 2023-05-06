@@ -22,7 +22,7 @@ export default function Annonces() {
       {dataList[idUrlAnnonce] ? (
         <main className="annoncePageContent">
           <Slideshow pictures={annonce.pictures} />
-          <div className="annonceHeader">
+          <div className="annonceDetails">
             <div className="annonceTitle-Location">
               <h1>{annonce.title}</h1>
               <p>{annonce.location}</p>

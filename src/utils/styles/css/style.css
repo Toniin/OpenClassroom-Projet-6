@@ -100,7 +100,7 @@ footer img {
 .errorNotFound {
   font-weight: 700;
   font-size: 20rem;
-  margin: 10rem 0 0 0;
+  margin: 7rem 0 0 0;
 }
 
 @media (max-width: 745px) {
@@ -378,7 +378,7 @@ footer img {
   flex-direction: column;
   color: #ff6060;
 }
-.annoncePageContent .annonceHeader {
+.annoncePageContent .annonceDetails {
   position: relative;
 }
 .annoncePageContent .annonceAuthor-Rating {
@@ -432,7 +432,7 @@ footer img {
   .annoncePageContent {
     margin-top: 1rem;
   }
-  .annoncePageContent .annonceHeader {
+  .annoncePageContent .annonceDetails {
     display: flex;
     flex-direction: column;
   }

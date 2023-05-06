@@ -3,7 +3,7 @@
   flex-direction: column;
   color: $primary-color;
 
-  .annonceHeader {
+  .annonceDetails {
     position: relative;
   }
 
@@ -62,7 +62,7 @@
   .annoncePageContent {
     margin-top: 1rem;
 
-    .annonceHeader {
+    .annonceDetails {
       display: flex;
       flex-direction: column;
     }

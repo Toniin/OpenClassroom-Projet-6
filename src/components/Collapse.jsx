@@ -6,14 +6,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Collapse({ titleCollapse, contentCollapse }) {
-  const [displayCollapse, setDisplayCollapse] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <section className="collapse">
-      <button onClick={() => setDisplayCollapse(!displayCollapse)}>
-        {titleCollapse} <span>{displayCollapse ? <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />} </span>
+      <button onClick={() => setIsOpen(!isOpen)}>
+        {titleCollapse} <span>{isOpen ? <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />} </span>
       </button>
-      {displayCollapse ? (
+      {isOpen ? (
         <div className="contentCollapse">
           {typeof contentCollapse === "object" ? (
             <ul>
