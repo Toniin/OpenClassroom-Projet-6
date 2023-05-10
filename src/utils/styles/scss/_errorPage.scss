@@ -4,6 +4,11 @@
   align-items: center;
   color: $primary-color;
 
+  p {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
   a {
     color: $primary-color;
     margin-top: 10rem;
@@ -20,6 +25,10 @@
   .errorPageContent {
     font-size: 0.8rem;
     text-align: center;
+
+    p {
+      font-size: 1.4rem;
+    }
 
     a {
       margin-top: 7rem;

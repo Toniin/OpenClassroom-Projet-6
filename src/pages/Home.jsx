@@ -6,7 +6,6 @@ import dataList from "../dataList.json";
 
 export default function Home() {
   const titleBanner = "Chez vous, partout et ailleurs";
-
   return (
     <main>
       <Banner
@@ -21,7 +20,7 @@ export default function Home() {
             <Card
               key={annonce.id}
               imgUrl={annonce.cover}
-              imgAltCard="Falaise avec la mer"
+              imgAltCard={annonce.title}
               titleCard={annonce.title}
             />
           </Link>

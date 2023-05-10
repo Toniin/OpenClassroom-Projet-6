@@ -9,8 +9,8 @@ export default function ErrorPage() {
     <>
       <Header />
       <main className="errorPageContent">
-        <p className="errorNotFound">{error.status}</p>
-        <h1>Oups! La page que vous demandez n'existe pas.</h1>
+        <h1 className="errorNotFound">{error.status}</h1>
+        <p>Oups! La page que vous demandez n'existe pas.</p>
         <Link to={`/`}>Retourner sur la page d’accueil</Link>
       </main>
       <Footer />

@@ -92,6 +92,10 @@ footer img {
   align-items: center;
   color: #ff6060;
 }
+.errorPageContent p {
+  font-size: 2rem;
+  font-weight: 500;
+}
 .errorPageContent a {
   color: #ff6060;
   margin-top: 10rem;
@@ -107,6 +111,9 @@ footer img {
   .errorPageContent {
     font-size: 0.8rem;
     text-align: center;
+  }
+  .errorPageContent p {
+    font-size: 1.4rem;
   }
   .errorPageContent a {
     margin-top: 7rem;
