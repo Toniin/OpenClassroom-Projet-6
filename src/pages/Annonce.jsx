@@ -1,7 +1,7 @@
 import { useParams, Navigate } from "react-router-dom";
 import Slideshow from "../components/Slideshow";
 import Collapse from "../components/Collapse";
-import dataList from "../dataList.json";
+import dataList from "../utils/dataList.json";
 import Tag from "../components/Tag";
 import Rating from "../components/Rating";
 

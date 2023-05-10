@@ -2,10 +2,11 @@ import Banner from "../components/Banner";
 import Card from "../components/Card";
 import imgBanner from "../assets/falaise.png";
 import { Link } from "react-router-dom";
-import dataList from "../dataList.json";
+import dataList from "../utils/dataList.json";
 
 export default function Home() {
   const titleBanner = "Chez vous, partout et ailleurs";
+  
   return (
     <main>
       <Banner
