@@ -31,7 +31,7 @@ export default function Rating({ rating, idAnnonce }) {
               icon={faStar}
             />
           ))
-        : null}
+        : ""}
     </div>
   );
 }
